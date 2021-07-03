@@ -31,6 +31,25 @@ namespace Project {
             /* WHILE / FOR LOOPS */
             //same as c++
 
+            /* 2D ARRAYS */
+            int [,] numberGrid = {
+                {1,2},
+                {3,4},
+                {5,6},
+            };
+            Console.WriteLine(numberGrid[0,0]);
+
+            /* EXCEPTIONS */
+                try {
+                    int num = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(3/num);
+                } catch(DivideByZeroException e) {
+                    Console.WriteLine(e.Message);
+                } catch(FormatException e) {
+                    Console.WriteLine(e.Message);
+                } finally {
+                    Console.WriteLine("Error");
+                }
         }
 
         /* METHODS */

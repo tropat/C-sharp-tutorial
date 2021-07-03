@@ -45,6 +45,11 @@ namespace Project {
             Console.WriteLine(Math.Min(4,90));
             Console.WriteLine(Math.Round(5.6243));
 
+            /* INPUT */
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Hello " + name);
+
         }
     }
 }

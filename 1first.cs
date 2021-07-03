@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/* Compiling: mcs 1first.cs
+    Executing: mono 1first.exe */
+
 namespace Project {
     class Program {
         static void Main(string[] args) {

@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 namespace Project {
     class Program {
         static void Main(string[] args) {
+            
+            /* VARIABLES */
             string characterName = "John";
             char grade = 'A';
             int characterAge;
@@ -14,6 +16,8 @@ namespace Project {
             int age = -30;
             double gpa = 3.0;
             bool isMale = true;
+            int num = 6;
+            num++;
 
             Console.WriteLine("Hello World");
             Console.WriteLine("  /");
@@ -22,6 +26,10 @@ namespace Project {
             Console.WriteLine(30);
             Console.WriteLine(isMale);
 
+            Console.WriteLine("\nThere once was a man named " + characterName);
+            Console.WriteLine("He was " + characterAge + " years old");
+
+            /* STRINGS */
             Console.WriteLine("\n" + characterName.Length);
             Console.WriteLine(characterName.ToUpper());
             Console.WriteLine(characterName.ToLower());
@@ -31,8 +39,12 @@ namespace Project {
             Console.WriteLine(characterName.IndexOf("z"));
             Console.WriteLine(characterName.Substring(1, 2));
 
-            Console.WriteLine("\nThere once was a man named " + characterName);
-            Console.WriteLine("He was " + characterAge + " years old");
+            /* MATH */
+            Console.WriteLine(Math.Pow(3, 5));
+            Console.WriteLine(Math.Max(4,90));
+            Console.WriteLine(Math.Min(4,90));
+            Console.WriteLine(Math.Round(5.6243));
+
         }
     }
 }

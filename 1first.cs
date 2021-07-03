@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Giraffe {
+namespace Project {
     class Program {
         static void Main(string[] args) {
-            
+            Console.WriteLine("Hello World");
+            Console.WriteLine("  /");
+            Console.WriteLine(" /");
+            Console.WriteLine("/");
+            Console.ReadLine();
         }
     }
 }

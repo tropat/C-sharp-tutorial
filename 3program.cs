@@ -15,11 +15,47 @@ namespace Project {
             friends[1] = "Kelly";
 
             SayHi("Pat");
+            Console.WriteLine(cube(3));
+
+            /* IF STATEMENT */
+            bool isMale = false;
+            if(isMale) {
+                Console.WriteLine("You are male");
+            } else {
+                Console.WriteLine("You are not male");
+            }
+
+            /* SWITCH */
+            Console.WriteLine(GetDay(0));
+
+            /* WHILE / FOR LOOPS */
+            //same as c++
+
         }
 
         /* METHODS */
         static void SayHi(string name) {
             Console.WriteLine("Hello " + name);
+        }
+
+        static int cube(int num) {
+            int result = num * num * num;
+            return result;
+        }
+
+        static string GetDay(int dayNum) {
+            string dayName;
+
+            switch(dayNum) {
+                case 0:
+                    dayName = "Sunday";
+                    break;
+                default:
+                    dayName = "Invalid dayNum";
+                    break;
+            }
+
+            return dayName;
         }
     }
 }
